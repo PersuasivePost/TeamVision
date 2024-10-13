@@ -1,0 +1,16 @@
+* {
+  background-color: black;
+  color: white;
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+.main-container {
+  margin-top: 80px; /* Space for the navbar */
+  padding-top: 80px; /* Prevent overlap with fixed navbar */
+}
+
+.hero-container {
+  margin-top: 850px;
+  text-align: center;
+}
+/* rgb(33, 37, 41); */ 

@@ -1,0 +1,119 @@
+/* Global Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* Header Styles */
+
+.header {
+  padding: 0;
+  text-align: center;
+  position: fixed; /* Ensure it's fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7); /* Added background for better visibility */
+}
+
+.header-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em; /* Adjust the size as needed */
+  font-weight: 700; /* Bold weight */
+  margin-left: 10px; /* Optional: space between logo and title */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Navbar Styles */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em; /* Increased horizontal padding for better spacing */
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-item {
+  background-color: rgb(233, 255, 9);
+  border: 1px solid rgb(233, 255, 9); /* Consolidated borders */
+  box-shadow: rgb(128, 128, 128) 5px 5px 0px 0px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: block;
+  font-family: 'Outfit', sans-serif; /* Ensure the font is available */
+  font-size: 16px;
+  font-weight: 500;
+  height: 42px;
+  line-height: 24px;
+  margin-left: 16px;
+  padding: 8px 12px; /* Adjusted padding to accommodate text */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
+  width: auto; /* Set width to auto to accommodate varying text lengths */
+}
+
+.nav-item:hover {
+  color: rgb(0, 0, 0); /* Maintain text color on hover */
+  box-shadow: none; /* Remove the box shadow on hover */
+}
+
+.vis {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center; /* Center align items in mobile view */
+  }
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px; /* Add space between logo and links */
+  }
+  .nav-links li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,108 @@
+/* Styling for the "Our Projects" title */
+.projects-title {
+    margin-top: 30px;
+    font-size: 40px;
+    color: white; /* Golden color */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Golden breakthrough (a dotted line behind the title) */
+.projects-title::after {
+    content: "";
+    display: block;
+    width: 60%; /* Width of the line */
+    height: 4px; /* Height of the line */
+    background: #ffd700; /* Golden color */
+    margin: 10px auto; /* Center the line */
+}
+
+/* Container for all the project boxes */
+.projects-container {
+    display: flex;
+    justify-content: space-evenly; /* Equal space between items */
+    gap: 0px; /* No gap between boxes */
+    margin: 20px 0;
+    padding: 0 10px; /* Slight padding for overall layout */
+}
+
+/* Individual project box styling */
+.project-box {
+    flex: 1; /* Make boxes flexible and fit in the container */
+    max-width: 220px; /* Set a max width for each box */
+    height: 220px; /* Set height to create square boxes */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Soft border */
+    transition: border 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    backdrop-filter: blur(5px); /* Glassmorphism effect */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+
+    background-image: url('public/images/visionfinal.png'); /* Replace with your image path */
+    background-size: contain; /* Use 'contain' to ensure the entire image fits */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+}
+
+/* Hover effect for the whole project box */
+.project-box:hover {
+    border: 2px solid #ffd700; /* Golden border on hover */
+    transform: scale(1.05);
+    opacity: 0.9; /* Slightly darken on hover */
+}
+
+/* Styling for the project name */
+.project-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    background: none; /* Ensure no background color */
+}
+
+/* Styling for the project subtitle (sur) */
+.project-sur {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #FFFDD0; /* Lighter color for subtitle */
+    background: none; /* Ensure no background color */
+}
+
+/* Styling for the project info */
+.project-info {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #FFFDD0; /* Grayish text for info */
+    cursor: default;
+    transition: color 0.3s ease;
+    background: none; /* Ensure no background color */
+}
+
+/* Change cursor to pointer when hovering on the info */
+.project-info:hover {
+    cursor: pointer;
+    color: #ffd700; /* Golden text on hover */
+}
+
+/* Styling for the Learn more link */
+.project-learn-more {
+    font-size: 14px;
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background: none; /* Ensure no background color */
+}
+
+.project-learn-more:hover {
+    color: #ffd700; /* Golden hover effect */
+}
+
+
+/* public/images/visionfinal.png */

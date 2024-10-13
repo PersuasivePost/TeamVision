@@ -1,0 +1,78 @@
+.about-us {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Gradient background */
+    border-radius: 10px;
+    margin: 40px auto; /* Increased margin for better separation */
+    max-width: 800px;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.about-us h1 {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px; /* Space below heading */
+    position: relative; /* For the line positioning */
+}
+
+/* Golden line below the About Us heading */
+.about-us h1::after {
+    content: "";
+    display: block;
+    width: 60%; /* Width of the line */
+    height: 4px; /* Height of the line */
+    background: #ffd700; /* Golden color */
+    margin: 10px auto; /* Center the line */
+}
+
+.upcoming-events {
+    text-align: center;
+    padding: 20px;
+}
+
+.upcoming {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px; /* Space below heading */
+    position: relative; /* For the line positioning */
+}
+
+/* Golden line below the Upcoming Events heading */
+.upcoming::after {
+    content: "";
+    display: block;
+    width: 60%; /* Width of the line */
+    height: 4px; /* Height of the line */
+    background: #ffd700; /* Golden color */
+    margin: 10px auto; /* Center the line */
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0; /* Remove default margin */
+}
+
+.para {
+    margin-top: 10px;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .about-us h1 {
+        font-size: 30px;
+    }
+
+    .upcoming {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+

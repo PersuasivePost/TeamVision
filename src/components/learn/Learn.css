@@ -1,0 +1,30 @@
+/* Styling for the "Learn From Us" title */
+.learn-from-us {
+    margin-top: 150px;
+    font-size: 36px; /* Slightly smaller for balance */
+    color: white; /* Consistent color scheme */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.learn-from-us::after {
+    content: "";
+    display: block;
+    width: 80px; /* Shorter line for subtlety */
+    height: 3px; /* Slimmer line */
+    background: #ffd700; /* Golden color for contrast */
+    margin: 10px auto; /* Center the line */
+}
+
+/* Styling for the subtitle and description */
+h3 {
+    font-size: 18px; /* Same as other sections for consistency */
+    line-height: 1.6;
+    margin: 20px auto; /* Add spacing for better readability */
+    color: #cccccc; /* Light gray color for secondary text */
+    max-width: 800px; /* Limit the width of the text */
+    text-align: center; /* Center the text block */
+    padding: 0 20px; /* Padding for smaller screens */
+}

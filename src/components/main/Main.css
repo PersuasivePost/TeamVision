@@ -1,0 +1,124 @@
+.mainn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mainn h1 {
+    font-weight: bold;
+    font-size: 40px; /* Reduced size for a better fit */
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+.mainn h4 {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color: #cccccc;
+}
+
+.mainn a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.mainn a:hover {
+    background-color: #f2f2f2;
+}
+
+.vision {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(https://appx-static.akamai.net.in/tharunspeaks/underline.svg);
+    background-origin: padding-box;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    box-sizing: border-box;
+    color: #ffd700; /* Changed to a darker gray color */
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    height: auto;
+    line-height: normal;
+    pointer-events: auto;
+    text-align: center;
+    text-size-adjust: 100%;
+    width: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.images {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    margin: 20px auto; /* Add some margin top and bottom */
+}
+
+.mainn img {
+    width: 30%; /* Reduced width to 30% for smaller images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add some margin around the images */
+    border-radius: 5px; /* Add a slight border radius */
+    transition: border 0.3s ease-in-out; /* Add a transition effect for the border */
+}
+
+.mainn img:hover {
+    border: 2px solid #ffd700; /* Add a golden color border on hover */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Add a subtle box shadow on hover */
+}
+
+button {
+    background-color: rgb(233, 255, 9);
+    border: 1px solid rgb(233, 255, 9);
+    box-shadow: rgb(128, 128, 128) 5px 5px 0px 0px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: block;
+    font-family: 'Outfit', sans-serif; /* Ensure the font is available */
+    font-size: 16px;
+    font-weight: 500;
+    height: 42px;
+    line-height: 24px;
+    margin: 40px auto; /* Increased margin for better separation */
+    padding: 8px 12px; /* Adjusted padding to accommodate text */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    user-select: none;
+    vertical-align: middle;
+    width: auto; /* Set width to auto to accommodate varying text lengths */
+    position: relative; /* Add relative positioning */
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%; /* Center the box horizontally */
+    transform: translateX(-50%); /* Center the box horizontally */
+    width: 100%; /* Set the width to 100% */
+    height: 5px;
+    background-color: rgb(128, 128, 128);
+    transition: height 0.15s ease-in-out;
+}
+
+button:hover::after {
+    background-color: transparent;
+    height: 0;
+}
+
+button:hover {
+    box-shadow: none; /* Remove box shadow on hover */
+}
+

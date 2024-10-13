@@ -1,0 +1,51 @@
+/* Container to hold the ticker text */
+.ticker-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;       /* Hide text when it moves outside of the container */
+    padding: 5px 0;        /* Reduced padding for minimal gap */
+    margin: 0;             /* Remove any default margin */
+}
+
+/* Ticker styling */
+.ticker {
+    display: flex;          /* Use flex to arrange items */
+    white-space: nowrap;   /* Prevent text from wrapping */
+    animation: ticker-scroll 10s linear infinite; /* Adjust duration for speed */
+}
+
+/* Reverse ticker styling */
+.reverse .ticker {
+    animation: ticker-scroll-reverse 10s linear infinite; /* Same duration for consistency */
+}
+
+/* Scrolling text styling */
+.ticker span {
+    font-size: 30px;       /* Increase font size */
+    color: #ffd700;        /* Gold color to match your theme */
+}
+
+/* Keyframes for left-to-right scrolling */
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(100%);  /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End off-screen to the left */
+    }
+}
+
+/* Keyframes for right-to-left scrolling */
+@keyframes ticker-scroll-reverse {
+    0% {
+        transform: translateX(-100%);  /* Start off-screen to the left */
+    }
+    100% {
+        transform: translateX(100%); /* End off-screen to the right */
+    }
+}
+
+/* Additional styling to space out the tickers */
+.ticker-container > div {
+    height: 50px; /* Set a fixed height for each ticker */
+}

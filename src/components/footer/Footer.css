@@ -1,0 +1,43 @@
+.footer {
+    margin-top: 150px;
+    background-color: rgb(31, 41, 55); /* Dark grayish-blue background */
+    border-bottom-color: rgb(206, 163, 54); /* Golden border color */
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255); /* White text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    height: 166px;
+    line-height: 24px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    width: 100%; /* Full width of the page */
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Removes tap highlight */
+}
+
+.footer-icons {
+    background: transparent;    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-icons img {
+    background: transparent;
+    cursor: pointer;
+    margin: 0 15px; /* Add space between icons */
+    height: 40px; /* Adjust the icon size */
+    width: 40px;
+}
+
+.footer-text {
+    background: transparent;
+    color: rgb(206, 163, 54); /* Golden color for bottom text */
+    font-size: 14px;
+    margin: 5px 0;
+}
