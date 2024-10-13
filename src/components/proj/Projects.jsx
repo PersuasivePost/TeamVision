@@ -1,5 +1,5 @@
 import Project from "./Props"; // Importing the Project component
-import "./projects.css"; // Importing the CSS for styling
+import "./Projects.css"; // Importing the CSS for styling
 
 const Projects = () => {
   return (
