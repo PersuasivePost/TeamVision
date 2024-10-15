@@ -56,6 +56,16 @@ body {
   margin-right: 10px;
 }
 
+/* Fix image styles */
+.logo-link img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Keep the aspect ratio */
+  margin-right: 10px; /* Add some space between the image and the title */
+  border-radius: 8px; /* Optional: add rounded corners */
+  object-fit: cover; /* Ensure the image covers its area neatly */
+}
+
+
 .nav-links {
   list-style: none;
   margin: 0;

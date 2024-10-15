@@ -59,10 +59,12 @@
 
 /* Image styling */
 .team-image {
-    width: 100%;
-    height: 70%; /* Adjusted height to ensure better aspect ratio */
-    object-fit: cover; /* Cover the area of the box */
+    width: 100%; /* Ensure the image takes the full width of the card */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 70%; /* Prevent the image from stretching too much */
+    object-fit: cover; /* Ensure the image covers the available space without distortion */
     border-radius: 10px 10px 0 0; /* Rounded corners at the top */
+    display: block; /* Ensure no extra space around the image */
 }
 
 /* Hover effect for the whole card */
