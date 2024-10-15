@@ -8,7 +8,7 @@ export default function Header({ onNavClick }) {
                 <nav className='navbar'>
                     <div className='vis'>
                         <a className='logo-link'>
-                            <img className='logo' src='./images/vision.jpeg' alt="Team Vision Logo" />
+                            <img className='logo' src='./public/vision.jpeg' alt="Team Vision Logo" />
                         </a>
                         <h1 className='header-title'>Team Vision</h1>
                     </div>
